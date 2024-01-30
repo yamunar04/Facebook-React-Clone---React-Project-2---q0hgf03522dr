@@ -21,7 +21,7 @@ const SearchBar = () => {
     useEffect(() => {
         const handlePageReload = () => {
             // Check if it's a page reload
-            if (window.performance.navigation.type === 1) {
+            if (window.performance === 1) {
                 setSearchTerm('');
             }
         };

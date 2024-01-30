@@ -16,22 +16,9 @@ export async function createPageApi(token, name,description, image) {
         body: fd,
       });
       const resData = await res.json();
-      console.log(resData);
+
       return resData;
     } catch (error) {
       console.error("error creating page", error.message);
     }
   }
-
-
-//   <Avatar
-//                   src={communityPostUser?.profileImage}
-//                   sx={{
-//                     height: "24px",
-//                     width: "24px",
-//                     objectFit: "contain",
-//                     marginRight: "0.5rem",
-//                   }}
-//                 >
-//                   {communityPostUser?.name?.charAt(0).toUpperCase() || "NA"}
-//                 </Avatar>

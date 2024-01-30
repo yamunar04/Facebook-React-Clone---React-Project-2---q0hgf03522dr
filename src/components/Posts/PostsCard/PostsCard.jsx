@@ -7,11 +7,10 @@ import { AiFillLike } from "react-icons/ai";
 
 const PostsCard = (props) => {
     const { author , _id, createdAt, images, content, likeCount, commentCount,channel : {image} } = props;
-//     const { author } = props;
-//   const _id = author?._id;
+
     const name = author.name;
     const user_id = author._id;
-    console.log(user_id);
+
     const [isLiked, setIsLiked] = useState(false);
     const [updatedLikeCount, setUpdatedLikeCount] = useState(likeCount);
     const authToken = localStorage.getItem("authToken");

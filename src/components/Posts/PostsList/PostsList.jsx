@@ -17,9 +17,9 @@ function PostsList() {
                     'projectID': 'q0hgf03522dr'
                 }
             });
-            // console.log(response);
+
             const postsListData = response.data.data;
-            console.log(postsListData);
+
             if (postsListData) {
                 setPostsList(postsListData);
             }
@@ -49,7 +49,7 @@ function PostsList() {
                             <PostsCard
                                 key={_id}
                                 {...post}
-                                // onImageClick={() => handleImageClick(product.id)}
+                                
                             />
                             ))}
                         </div>

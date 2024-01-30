@@ -5,18 +5,10 @@ import { useNavigate } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 const Profile = () => {
-  // const { author } = props;
-  // const _id = author && author._id;
-  // const user_id = author._id;
-  // console.log(author);
+
   const [showModal, setShowModal] = useState();
   const profileIconRef = useRef(null);
   const navigate = useNavigate(null);
-
-  const handleClickProfile = () => {
-    alert("clicked")
-    // navigate(`/userprofile/${user_id}`);
-  }
 
   const handleSignout = () => {
     localStorage.removeItem("userInfo");
@@ -58,14 +50,6 @@ const Profile = () => {
               <AccountCircleIcon className="forSvg" />
             </div>
 
-            <div className="btn-for-name">
-              <button
-                onClick={handleClickProfile}
-                className="view-profile"
-              >
-                <span className="view-profile-span">Profile</span>
-              </button>
-            </div>
           </div>
 
           <div className="upper-div-main">

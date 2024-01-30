@@ -16,22 +16,10 @@ export async function createPostApi(token, title,content, images, channelId) {
         body: fd,
       });
       const resData = await res.json();
-      console.log(resData);
+
       return resData;
     } catch (error) {
       console.error("error creating post", error.message);
     }
   }
 
-
-//   <Avatar
-//                   src={communityPostUser?.profileImage}
-//                   sx={{
-//                     height: "24px",
-//                     width: "24px",
-//                     objectFit: "contain",
-//                     marginRight: "0.5rem",
-//                   }}
-//                 >
-//                   {communityPostUser?.name?.charAt(0).toUpperCase() || "NA"}
-//                 </Avatar>

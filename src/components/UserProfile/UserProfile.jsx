@@ -4,13 +4,8 @@ import { useParams } from 'react-router-dom';
 import { Avatar } from "@mui/material";
 
 const UserProfile = () => {
-    // const name = JSON.parse(sessionStorage.getItem("userInfo"));
-    // const {_id,name,email,skills,address,workExprience,education,profileImage} = props;
     const authToken = localStorage.getItem("authToken");
     const { userId } = useParams();
-    
-    // console.log(userId);
-    // const [selectedImage, setSelectdImage] = useState(null);
     
     const [isFollowing, setIsFollowing] = useState(false);
     const [isFollowing1, setIsFollowing1] = useState(false);
@@ -34,7 +29,7 @@ const UserProfile = () => {
     const UserDetails = async (userId) => {
         try {
             setIsLoading(true);
-            // console.log(userId)
+
             const response = await fetch(`https://academics.newtonschool.co/api/v1/facebook/user/${userId}`, {
             method : "GET",    
             headers: {
@@ -42,9 +37,9 @@ const UserProfile = () => {
                     'projectID': 'q0hgf03522dr'
                 }
             });
-            console.log(response);
+
             const userDetailsData = await response.json();
-            console.log(userDetailsData);
+
             if (userDetailsData) {
                 setUserDetails(userDetailsData);
             }
@@ -59,7 +54,6 @@ const UserProfile = () => {
         UserDetails(userId);
     }, []);
     
-    // console.log(userDetails)
 
     return (
         <div className="profile-container">
@@ -103,16 +97,19 @@ const UserProfile = () => {
                     </div>
                     <div className="profile-description">
                         <h2>Experience</h2>
-                        <div>{userDetails?.data?.workExprience[0]?.companyName || ''}</div>
-                        <div>{userDetails?.data?.workExprience[0]?.designation || ''}</div>                       
+                        <p>{userDetails?.data?.workExperience[0]?.companyName || ''}</p>
+                        <p>{userDetails?.data?.workExperience[0]?.designation || ''}</p>                       
                     </div>
                     <div className="profile-description">
                         <h2>Education</h2>
-                        <div className="profile-dec-row">{userDetails?.education || ''}</div>
+                        <p className="profile-dec-row">{userDetails?.data?.education[0]?.schoolName || ''}</p>
+                        <p className="profile-dec-row">{userDetails?.data?.education[0]?.degree || ''}</p>
                     </div>
                     <div className="profile-description">
                         <h2>Skills</h2>
-                        <div>{userDetails.skills || ''}</div>
+                        <p>{userDetails?.data?.skills[0] || ''}</p>
+                        <p>{userDetails?.data?.skills[1] || ''}</p>
+                        <p>{userDetails?.data?.skills[2] || ''}</p>
                     </div>
                 </div>
 

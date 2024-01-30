@@ -3,7 +3,6 @@ import React from "react";
 import { NavLink} from "react-router-dom";
 import Profile from "../Profile/Profile";
 import { FaFacebook,FaHome } from "react-icons/fa";
-import { IoIosNotifications } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineGroups } from "react-icons/md";
 import SearchBar from "../Search/SearchBar";
@@ -34,12 +33,6 @@ function Navbar  ()  {
             <span>Pages</span> 
           </NavLink>
         </div>
-        {/* <div className="navbar-container2-notification">
-          <NavLink className="notificationnav" to="/notification">
-            <IoIosNotifications className="nav-icon" />
-            <span>Notifications</span>
-          </NavLink>
-        </div> */}
         <div className="navbar-container2-me">
           <div
             style={{

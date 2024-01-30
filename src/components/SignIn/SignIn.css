@@ -53,6 +53,7 @@
 
 #signin-button{
     font-size: x-large; 
+    cursor: pointer;
 }
 
 .signin button{

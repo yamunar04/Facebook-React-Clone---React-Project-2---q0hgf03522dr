@@ -19,7 +19,6 @@ function ChannelsList() {
                 }
             });
             const channelsListData = response.data.data;
-            console.log(channelsListData);
             if (channelsListData) {
                 setchannelsList(channelsListData);
             }

@@ -1,0 +1,120 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: large;
+    font-weight: 400;
+}
+.profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+    padding: 5px;
+    background: #fff;
+    margin-right: 10px;
+}
+.home-left-sidebar{
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    width: 280px;
+    margin-left: 2rem;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.home-profile-pic{
+    margin-top: 5rem;
+    cursor: pointer;
+}
+.home-profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.home-name {
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+.home-other-options {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+.home-other-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.home-sidebar-icon{
+    color: blue;
+    width: 20px;
+    height: 25px;
+    padding: 0.4rem;
+}
+  .home-sidebar-info{
+    font-size: smaller;
+    padding: 0.4rem;
+  }
+
+  .home-right-sidebar{
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    width: 280px;
+    margin-right: 2rem;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    text-align: center;
+  }
+  .home-right-image{
+    width: 280px;
+    height: 100px;
+  }
+  .home-right-description{
+    gap: 1rem;
+  }
+  .home-advt{
+    margin-top: 0.5rem;
+  }
+
+  .create-posts{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    /* width: 500px; */
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 1rem 
+  }
+  .posts-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .create-post-input input:hover{
+    cursor: pointer;
+    color: blue;
+  }
+  .create-input{
+    width: 400px;
+    height: 50px;
+    font-size: large;
+  }
+  .home-other-icons-para{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  .home-other-icons-para:hover{
+    cursor: pointer;
+  }

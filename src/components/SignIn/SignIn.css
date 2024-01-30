@@ -1,0 +1,61 @@
+.signin-page{
+    display: flex;
+    flex-direction: row;
+}
+.signin-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;  
+    margin-top: 7rem;
+    margin-left: 3rem; 
+}
+.signin-heading{
+    font-size: xx-large;
+    font-weight: 1000;
+    color: blue;
+}
+.signin-para{
+    font-size: large;
+    font-weight: 500;
+}
+.signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    margin-top: 10px;
+}
+
+.signin input {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    font-size: large;
+  }
+  
+.signin label{
+    font-size: x-large; 
+  }
+.signin form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+.signin p{
+    font-size: x-large; 
+  }
+
+#signin-button{
+    font-size: x-large; 
+}
+
+.signin button{
+    font-size: large; 
+    padding: 0.5rem;
+}

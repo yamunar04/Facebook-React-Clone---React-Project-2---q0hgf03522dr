@@ -1,0 +1,45 @@
+.createpost-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.createpost-form label{
+    font-size: x-large; 
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+.createpost-form input{
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    font-size: large;
+    width: 360px;
+    height: 40px;
+}
+.createpost-form textarea{
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    font-size: large;
+    width: 360px;
+    height: 40px;
+}
+.createpost-form button{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    font-size: large;
+    margin-top: 1rem;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 55px;
+    cursor: pointer;
+}

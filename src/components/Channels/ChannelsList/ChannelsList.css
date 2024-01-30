@@ -1,0 +1,10 @@
+p{
+    color: black;
+    background-color: white;
+}
+.channelslist-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

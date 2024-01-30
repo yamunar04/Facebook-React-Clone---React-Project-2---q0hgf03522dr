@@ -1,0 +1,90 @@
+.single-post-container{
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+.single-post-container1{
+    margin-right: 2rem;
+
+}
+.single-post-image{
+    display: flex;
+    width: 35%;
+    height: 80%;
+    object-fit: contain;
+    
+}
+.single-post-image img{
+    border-radius: 0.5rem;
+}
+.single-post-name-createdat{
+    padding: 1rem;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+.single-post-container2{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-top: 1.5rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+.comments-section{
+    text-align: center;
+    font-size: large;
+}
+.single-post-container2 ul{
+    list-style-type: none;
+}
+.single-post-container2 li{
+    margin: 0.5rem;
+}
+.comments-container{
+    border: 1px solid black;
+    border-radius: 0.2rem;
+}
+.comments-container p{
+    margin-left: 0.5rem;
+}
+.comments-delete-button{
+    margin: 0.5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.comments-delete-button:hover{
+    color: blue;
+}
+.textarea-container{
+    margin-left: 0.5rem;
+}
+.textarea-section{
+    width: 366px;
+    height: 50px;
+    padding: 0.5rem;
+}
+.comments-add-button{
+    margin: 0.5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.comments-add-button:hover{
+    color: blue;
+}
+.delete-post-container{
+    margin: 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.delete-post{
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
+.delete-post:hover{
+    color: blue;
+}

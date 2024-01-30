@@ -1,0 +1,153 @@
+.channels-profile-image {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 5px
+}
+
+.channels-container {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 500px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.channels-image-click {
+    cursor: pointer;
+}
+
+.channels-image-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.channels-name {
+    font-size: large;
+    text-align: center;
+    gap: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channels-createdAt {
+    text-align: left;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.channels-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.channels-image img {
+    width: 500px;
+    height: 250px;
+}
+
+.like {
+    width: 30px;
+    height: 25px;
+}
+
+.like-comment {
+    display: flex;
+    flex-direction: row;
+}
+
+.like:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.like-count {
+    font-size: large;
+}
+
+.comment {
+    width: 18px;
+    height: 25px;
+    margin-left: 400px;
+}
+
+.comment:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.comment-count {
+    font-size: large;
+    margin-left: 5px;
+}
+
+.like-comment-update {
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    display: flex;
+    width: 480px;
+    height: 30px;
+    margin-top: 1rem;
+}
+
+.like-update {
+    width: 30px;
+    height: 25px;
+}
+
+.comment-update {
+    width: 18px;
+    height: 25px;
+    margin-left: 420px;
+}
+
+.like-update:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.comment-update:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.channels-description-content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.delete-channel-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.delete-channel {
+    width: 200px;
+    height: 30px;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.delete-channel:hover {
+    color: blue;
+}

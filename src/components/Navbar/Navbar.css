@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    border: 1px solid #e5e7eb;
+    z-index: 100;
+    padding: 0.5rem;
+  }
+  .header_search {
+    display: flex;
+    align-items: center;
+    background-color: #eef3f8;
+    /* padding: 3px 10px; */
+    border-radius: 5px;
+    outline: 2px;
+    margin: 3rem;
+    width: 500px;
+    height: 60px;
+  }
+  .header_search input {
+    width: 250px;
+    transition: width 0.2s;
+    background-color: transparent;
+    border-radius: 1px;
+    outline: 0;
+    height: 2rem;
+    padding: 1.2rem;
+    border: 0 solid #e5e7eb;
+  }
+  
+  .fa-search {
+    color: aqua;
+  }
+  .mercado-match {
+    color: blue;
+  }
+  
+  .navbar-container1 {
+    display: flex;
+    gap: 0.4rem;
+    margin-left: 110px;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-container1 svg{
+    cursor: pointer;
+  }
+  .navbar-container2 {
+    display: flex;
+    gap: 2.5rem;
+    margin-right: 100px;
+  }
+  .navbar-container3 {
+    display: flex;
+    gap: 1rem;
+  }
+  .homeNav {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    line-height: 1.333;
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.6);
+    
+  }
+  
+  .mercado-match1 {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .navbar-container2-home {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -0.4rem;
+  }
+  /* .mynetworknav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.6);
+  } */
+  .mercado-match2 {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  /* .navbar-container2-mynetwork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -0.4rem;
+  } */
+  /* .jobnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.6);
+  } */
+  .mercado-match3 {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  /* .navbar-container2-jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -0.4rem;
+  } */
+  .messagenav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .mercado-match4 {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .navbar-container2-messaging {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -0.4rem;
+    /* margin-top: 5px; */
+  }
+  .notificationnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .mercado-match5 {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .navbar-container2-notification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -0.4rem;
+  }
+  .menav {
+    text-decoration: none;
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .global-nav__icon {
+    color: rgba(0, 0, 0, 0.6);
+    height: 24px;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+    width: 24px;
+  }
+  svg[data-supported-dps="16x16"] {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .lucide-user-circle2 {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .navbar-container2-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: -0.4rem; */
+  }
+  #search2 {
+    height: 1rem;
+  }
+  .ember-view {
+    border-radius: 50%;
+  }
+  .active {
+    padding: 4.7px;
+    color: black;
+    
+  }
+  .active svg{
+    width: 30px;
+    height: 35px;
+  }
+  .nav-logo{
+    color: blue;
+    width: 30px;
+    height: 35px;
+  }
+  .nav-icon{
+    width: 30px;
+    height: 35px;
+    color: grey;
+  }
+  .nav-icon:hover{
+    color: blue;
+  }
+  /* .nav-home{
+    color: grey;
+  } */
+  .mercado-match6 {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+
+  @media only screen and (max-width:767px){
+    .navbar-container{
+      width: 100%;
+      background: #fff;
+      margin: 0;
+    }
+    .navbar-container1{
+      margin-left: 9px;
+    }
+    .navbar-container1 svg{
+      width: 22px;
+    }
+    .header_search{
+     
+      background-color: #fff;
+    }
+    .header_search input{
+      display: none;
+    }
+    .header_search svg{
+    
+     margin-right: 10px;
+     width: fit-content;
+    }
+    .navbar-container2{
+      gap: 2.2rem;
+    }
+    .navbar-container2 span{
+      display: none;
+    }
+    svg{
+      width: 20px;
+    }
+    .forMediaQuery{
+      display: none;
+    }
+    .navbar-container2-me{
+      display: none;
+    }
+  }
+  @media only screen 
+      and (width: 390px) 
+      and (height: 844px) 
+      and (-webkit-device-pixel-ratio: 3) { 
+        .navbar-container{
+          width: 100%;
+        }
+        .navbar-container1 svg{
+          width: 25px;
+        }
+      }

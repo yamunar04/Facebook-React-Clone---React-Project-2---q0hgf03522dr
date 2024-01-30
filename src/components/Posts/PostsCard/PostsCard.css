@@ -1,0 +1,145 @@
+.posts-profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  width: 500px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  text-align: center;
+  /* gap: 1rem; */
+  margin-top: 1rem;
+}
+
+.posts-image-click {
+  cursor: pointer;
+}
+
+.posts-name {
+  font-size: 13px;
+  text-align: center;
+  gap: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.posts-createdAt {
+  text-align: left;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.posts-name-createdat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem
+}
+
+.posts-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.posts-image img {
+  width: 500px;
+  height: 250px;
+}
+
+.posts-image-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.like {
+  width: 30px;
+  height: 25px;
+}
+
+.like-comment {
+  display: flex;
+  flex-direction: row;
+}
+
+.like:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.like-count {
+  font-size: large;
+}
+
+.comment {
+  width: 18px;
+  height: 25px;
+  margin-left: 400px;
+}
+
+.comment:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.comment-count {
+  font-size: large;
+  margin-left: 5px;
+}
+
+.like-comment-update {
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  display: flex;
+  width: 480px;
+  height: 30px;
+  margin-top: 1rem;
+}
+
+.like-update {
+  width: 30px;
+  height: 25px;
+}
+
+.comment-update {
+  width: 18px;
+  height: 25px;
+  margin-left: 420px;
+}
+
+.like-update:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.comment-update:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.posts-description-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

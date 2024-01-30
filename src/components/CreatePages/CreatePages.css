@@ -1,0 +1,61 @@
+.create-group-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: blue;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.createpage-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.createpage-form label{
+    font-size: x-large; 
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+.createpage-form input{
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    font-size: large;
+    width: 360px;
+    height: 40px;
+}
+.createpage-form textarea{
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    font-size: large;
+    width: 360px;
+    height: 40px;
+}
+.createpage-form button{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    font-size: large;
+    margin-top: 1rem;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.create-page-header{  
+    color: blue;
+    font-size: xx-large;
+    font-weight: 600;
+    padding: 1rem;
+}

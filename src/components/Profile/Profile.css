@@ -1,0 +1,105 @@
+.profile {
+    position: relative;
+  }
+  
+  .auth-modal {
+    margin-top: 0.8rem;
+    width: 15rem;
+    background-color: #fff;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+  }
+  .arrowIconForDropDown svg:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .auth-modal .for-svg-for-name svg {
+    height: 35px;
+    width: 35px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .for-svg-for-name {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    /* font-size: 14px; */
+  }
+  .for-svg-for-name h6 {
+    font-size: 20px;
+  }
+  .profile-name-span{
+    font-size: 17px;
+    margin-left: 0.5rem;
+  }
+  .view-profile-span{
+    font-size: 15px;
+  }
+  .auth-modal > h4 {
+    margin-top: 1rem;
+    font-size: medium;
+    margin-left: 1rem;
+  }
+  .upper-div-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .upper-div {
+    margin-top: 1rem;
+    /* margin-left: 1rem; */
+    /* margin-bottom: -10px; */
+    height: 100px;
+  }
+  .upper-div h4 {
+    font-size: medium;
+  }
+  .upper-div p {
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .upper-div p:hover {
+    text-decoration: underline;
+  }
+  .lower-div {
+    margin-left: 1rem;
+    margin-bottom: -20px;
+  }
+  .lower-div h4 {
+    font-size: medium;
+  }
+  .lower-div p {
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .lower-div p:hover {
+    text-decoration: underline;
+  }
+  .sign-out-btn {
+    /* margin-top: 0.5rem; */
+    font-size: 14px;
+    border: none;
+    /* margin-left: -150px; */
+    text-decoration: underline;
+    background: none;
+    text-decoration: none;
+  }
+  .sign-out-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .btn-for-name {
+    display: flex;
+    width: 95%;
+    text-align: center;
+  }
+  .view-profile {
+    text-align: center;
+    width: 100%;
+    height: 24px;
+    color: blue;
+    border-radius: 1px solid blue;
+    margin-bottom: -10px;
+  }

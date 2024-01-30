@@ -44,7 +44,6 @@ const CreatePageForm = () => {
 
                     <label htmlFor="image">Image:</label>
                     <input type="file" id="image" onChange={handleImageChange} />
-
                     <button type="submit" >Create Page</button>
                 </form>
             </div>

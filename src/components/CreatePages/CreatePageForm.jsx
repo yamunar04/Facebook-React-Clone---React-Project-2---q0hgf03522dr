@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CreatePages.css";
+import { useNavigate } from 'react-router-dom';
 import { createPageApi } from "../../helper/createPageAPI";
 
 const CreatePageForm = () => {
@@ -7,11 +8,13 @@ const CreatePageForm = () => {
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
     const [image, setImages] = useState(null);
+    const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
         e.preventDefault();  
         const response = await createPageApi(authToken,name,description,image);
         alert("Page Created Successfully");
+        navigate("/");
   };
 
   const handleImageChange = (e) => {

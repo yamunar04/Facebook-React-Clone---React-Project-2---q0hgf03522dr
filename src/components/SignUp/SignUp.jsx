@@ -214,6 +214,7 @@ function SignUp() {
     function handleSubmit(event) {
         event.preventDefault();
         signUp(userInfo);
+        alert("Signed Up Successfully");
     }
 
     return (

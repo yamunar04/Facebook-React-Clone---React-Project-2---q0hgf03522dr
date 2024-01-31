@@ -34,7 +34,7 @@ const SearchBar = () => {
     }, []);
 
     return (
-        <div className="search-bar">
+        <>
             <FaSearch onClick={focusSearchBar} className='search-bar-icon' />
             <input
                 type="text"
@@ -46,7 +46,7 @@ const SearchBar = () => {
                 onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                 className="search-input"
             />
-        </div>
+        </>
     );
 };
 

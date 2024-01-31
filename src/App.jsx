@@ -12,6 +12,7 @@ import SinglePost from './components/SinglePost/SinglePost';
 import CreatePostForm from './components/CreatePosts/CreatePostForm';
 import CreatePageForm from './components/CreatePages/CreatePageForm';
 import ChannelsList from './components/Channels/ChannelsList/ChannelsList';
+import CommingSoon from './components/CommingSoon/CommingSoon';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/channelslist" element={<ChannelsList />} />
           <Route path="/createposts" element={<CreatePostForm />} />
           <Route path="/createpages" element={<CreatePageForm />} />
+          <Route path="/commingsoon" element={<CommingSoon />} />
 
         </Routes>
       </div>

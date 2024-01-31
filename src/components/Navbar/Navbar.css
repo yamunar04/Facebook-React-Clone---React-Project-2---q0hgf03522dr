@@ -6,26 +6,23 @@
   
   .navbar-container {
     display: flex;
-    justify-content: space-between;
     height: 3.5rem;
     background-color: white;
     position: sticky;
     top: 0;
     width: 100vw;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #EAEAEA;
     z-index: 100;
-    padding: 0.5rem;
+    padding: 0.2rem;
   }
   .header_search {
     display: flex;
     align-items: center;
-    background-color: #eef3f8;
-    /* padding: 3px 10px; */
-    border-radius: 5px;
+    background-color: #EAEAEA;
+    border-radius: 5rem;
     outline: 2px;
-    margin: 3rem;
-    width: 500px;
-    height: 60px;
+    width: 200px;
+    height: 43px;
   }
   .header_search input {
     width: 250px;
@@ -47,18 +44,18 @@
   
   .navbar-container1 {
     display: flex;
-    gap: 0.4rem;
-    margin-left: 110px;
+    margin-left: 12px;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
   }
   .navbar-container1 svg{
     cursor: pointer;
   }
   .navbar-container2 {
     display: flex;
-    gap: 2.5rem;
-    margin-right: 100px;
+    gap: 5rem;
+    margin-left: 200px;
   }
   .navbar-container3 {
     display: flex;
@@ -86,42 +83,15 @@
     align-items: center;
     gap: -0.4rem;
   }
-  /* .mynetworknav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    font-size: smaller;
-    color: rgba(0, 0, 0, 0.6);
-  } */
+
   .mercado-match2 {
     color: rgba(0, 0, 0, 0.6);
   }
-  /* .navbar-container2-mynetwork {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: -0.4rem;
-  } */
-  /* .jobnav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    font-size: smaller;
-    color: rgba(0, 0, 0, 0.6);
-  } */
+  
   .mercado-match3 {
     color: rgba(0, 0, 0, 0.6);
   }
-  /* .navbar-container2-jobs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: -0.4rem;
-  } */
+ 
   .messagenav {
     display: flex;
     flex-direction: column;
@@ -139,7 +109,6 @@
     justify-content: center;
     align-items: center;
     gap: -0.4rem;
-    /* margin-top: 5px; */
   }
   .notificationnav {
     display: flex;
@@ -183,7 +152,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: -0.4rem; */
   }
   #search2 {
     height: 1rem;
@@ -192,18 +160,14 @@
     border-radius: 50%;
   }
   .active {
-    padding: 4.7px;
+    padding: 0.1rem;
     color: black;
     
   }
-  .active svg{
-    width: 30px;
-    height: 35px;
-  }
   .nav-logo{
     color: blue;
-    width: 30px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
   .nav-icon{
     width: 30px;
@@ -213,62 +177,32 @@
   .nav-icon:hover{
     color: blue;
   }
-  /* .nav-home{
-    color: grey;
-  } */
+
   .mercado-match6 {
     color: rgba(0, 0, 0, 0.6);
   }
-  
 
-  /* @media only screen and (max-width:767px){
-    .navbar-container{
-      width: 100%;
-      background: #fff;
-      margin: 0;
-    }
-    .navbar-container1{
-      margin-left: 9px;
-    }
-    .navbar-container1 svg{
-      width: 22px;
-    }
-    .header_search{
-     
-      background-color: #fff;
-    }
-    .header_search input{
-      display: none;
-    }
-    .header_search svg{
-    
-     margin-right: 10px;
-     width: fit-content;
-    }
-    .navbar-container2{
-      gap: 2.2rem;
-    }
-    .navbar-container2 span{
-      display: none;
-    }
-    svg{
-      width: 20px;
-    }
-    .forMediaQuery{
-      display: none;
-    }
-    .navbar-container2-me{
-      display: none;
-    }
-  } */
-  /* @media only screen 
-      and (width: 390px) 
-      and (height: 844px) 
-      and (-webkit-device-pixel-ratio: 3) { 
-        .navbar-container{
-          width: 100%;
-        }
-        .navbar-container1 svg{
-          width: 25px;
-        }
-      } */
+  .navbar-container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+  }
+  .nav-icon-span{
+    border: 1px solid #EAEAEA;
+    border-radius: 3rem;
+    width: 100px;
+    height: 2rem;
+    padding: 0.2rem;
+    background-color: #EAEAEA;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+  .nav-icon-span:hover{
+    cursor: pointer;
+    color: blue;
+  }

@@ -1,10 +1,11 @@
 .home{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     font-size: large;
     font-weight: 400;
     background-color: #EAEAEA;
+    gap: 5rem;
 }
 .profile-pic{
     width: 150px;

@@ -1,0 +1,10 @@
+.commingsoon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    color: blue;
+    font-size: 50px;
+    width: 100%;
+    height: 100%;
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./CreatePosts.css";
 import { useNavigate } from 'react-router-dom';
 import { createPostApi } from "../../helper/createPostAPI";
+import Navbar from "../Navbar/Navbar";
 
 const CreatePostForm = () => {
     const authToken = localStorage.getItem("authToken");
@@ -25,6 +26,7 @@ const CreatePostForm = () => {
 
     return (
         <>
+            <Navbar />
             <div className="createpost-form">
                 <form onSubmit={handleSubmit} >
                     <label htmlFor="title">Title:</label>

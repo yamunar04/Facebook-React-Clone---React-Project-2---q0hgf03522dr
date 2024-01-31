@@ -1,6 +1,11 @@
 .signup-page{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding: 3rem;
+
 }
 .signup-description{
     display: flex;
@@ -22,17 +27,23 @@
 }
 .signup{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
     margin: 3rem;
     margin-top: 10px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0.5rem;
 }
 
 .signup input {
     padding: 0.5rem;
     border-radius: 0.25rem;
-    border: 1px solid black;
-    font-size: large;
+    border: 1px solid #EAEAEA;
+    font-size: 13px;
+    justify-content: space-around;
   }
   
 .signup label{
@@ -42,8 +53,8 @@
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     gap: 0.5rem;
   }
 
@@ -52,10 +63,76 @@
   }
 
 #signup-button{
-    font-size: x-large; 
+    background-color: #42b72a;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    width: 200px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
 }
+
 
 .signup button{
     font-size: large; 
     padding: 0.5rem;
+}
+
+.input-div-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+.signup-header-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    gap: 0.5rem;
+    font-size: 32px;
+    font-weight: 600;
+}
+.signup-header-section span{
+    font-weight: 300;
+    font-size: 25px;
+    color: gray;
+}
+hr{
+    width: 100%;
+}
+.input-email-section,.input-password-section{
+    width: 365px;
+}
+.div-input-spacing{
+    display: flex;
+    justify-content: space-around;
+}
+.sign-up-submit-button{
+    display: flex;
+    justify-content: center;
+}
+.gender-section{
+    padding-top: 0;
+    padding: 0.7rem;
+}
+.gender-section2{
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+.gender-section3{
+    display: flex;
+    justify-content: space-between;
+    width: 115px;
+    height: 25px;
+    border: 1px solid #EAEAEA;
+    border-radius: 0.2rem;
+}
+.gender-section3 label{
+    font-size: 15px;
+    padding: 0.2rem;
+}
+.gender-section3-input{
+    margin: 0.2rem;
 }

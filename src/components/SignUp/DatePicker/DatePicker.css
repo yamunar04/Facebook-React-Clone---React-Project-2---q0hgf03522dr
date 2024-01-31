@@ -1,0 +1,22 @@
+.date-of-birth-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    padding-bottom: 0;
+}
+.date-of-birth-container1{
+    margin-bottom: 0.2rem;
+}
+.date-of-birth-container2{
+    display: flex;
+    gap: 1rem;
+}
+.date-of-birth-container2-select{
+    width: 115px;
+    height: 25px;
+    gap: 5rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #EAEAEA;
+    border-radius: 0.2rem;
+}

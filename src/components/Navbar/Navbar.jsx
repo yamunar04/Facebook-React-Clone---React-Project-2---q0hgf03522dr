@@ -10,7 +10,7 @@ import SearchBar from "../Search/SearchBar";
 
 function Navbar  ()  {
   return (
-    <header className="navbar-container">
+    <header className="navbar-container" id="nav-bar-container">
       <section className="navbar-container1">
         <NavLink to="/">
           <FaFacebook className="nav-logo"/>

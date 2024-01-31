@@ -4,6 +4,7 @@
     justify-content: space-around;
     font-size: large;
     font-weight: 400;
+    background-color: #EAEAEA;
 }
 .profile-pic{
     width: 150px;
@@ -16,7 +17,7 @@
 .home-left-sidebar{
     margin-top: 1rem;
     border-radius: 0.25rem;
-    border: 1px solid black;
+    /* border: 1px solid white; */
     width: 280px;
     margin-left: 2rem;
     height: 300px;
@@ -64,7 +65,7 @@
   .home-right-sidebar{
     margin-top: 1rem;
     border-radius: 0.25rem;
-    border: 1px solid black;
+    border: 1px solid white;
     width: 280px;
     margin-right: 2rem;
     height: 900px;
@@ -92,7 +93,7 @@
     padding: 0.5rem;
     border-radius: 0.25rem;
     flex-wrap: wrap;
-    border: 1px solid black;
+    border: 1px solid #EAEAEA;
     text-align: center;
     gap: 1rem;
     margin-top: 1rem 

@@ -221,7 +221,7 @@
   }
   
 
-  @media only screen and (max-width:767px){
+  /* @media only screen and (max-width:767px){
     .navbar-container{
       width: 100%;
       background: #fff;
@@ -260,8 +260,8 @@
     .navbar-container2-me{
       display: none;
     }
-  }
-  @media only screen 
+  } */
+  /* @media only screen 
       and (width: 390px) 
       and (height: 844px) 
       and (-webkit-device-pixel-ratio: 3) { 
@@ -271,4 +271,4 @@
         .navbar-container1 svg{
           width: 25px;
         }
-      }
+      } */

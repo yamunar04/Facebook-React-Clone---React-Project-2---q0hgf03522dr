@@ -1,40 +1,53 @@
 .signin-page{
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    background-color: #EAEAEA;
+    height: 100%;
+    width: 100%;
 }
 .signin-description{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 1.5rem;  
-    margin-top: 7rem;
-    margin-left: 3rem; 
+    width: 600px;
+    margin-top: 6rem;
+    margin-left: 8rem; 
 }
 .signin-heading{
-    font-size: xx-large;
-    font-weight: 1000;
+    font-size: 60px;
+    font-weight: 700;
     color: blue;
 }
 .signin-para{
-    font-size: large;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 480;
+    background-color: #EAEAEA;
 }
 .signin{
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 3rem;
-    margin-top: 10px;
+    margin-top: 3rem;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    width: 350px;
+    padding: 1rem;
 }
 
-.signin input {
+.signin-input {
     padding: 0.5rem;
     border-radius: 0.25rem;
-    border: 1px solid black;
+    border: 1px solid #EAEAEA;
     font-size: large;
+    width: 325px;
   }
   
+  #email{
+    height: 25px;
+  }
+  #password{
+    height: 25px;
+  }
 .signin label{
     font-size: x-large; 
   }
@@ -42,21 +55,57 @@
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    width: 325px;
   }
 
 .signin p{
-    font-size: x-large; 
+    color: blue; 
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
   }
 
 #signin-button{
     font-size: x-large; 
     cursor: pointer;
+    width: 345px;
+    background-color: blue;
+    color: white;
 }
 
 .signin button{
     font-size: large; 
-    padding: 0.5rem;
+}
+
+hr{
+    color: #EAEAEA;
+    width: 345px;
+}
+.signup-button{
+    height: 40px;
+    margin-top: 0.5rem;
+    width: 200px;
+    border: none;
+    background-color: #42b72a;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    font-weight: 600;
+}
+.signup-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin-p{
+    cursor: pointer;
+}
+.signin-page #nav-bar-container{
+    display: none;
+    color: #EAEAEA;
+}
+.signup-button:hover{
+    cursor: pointer;
 }

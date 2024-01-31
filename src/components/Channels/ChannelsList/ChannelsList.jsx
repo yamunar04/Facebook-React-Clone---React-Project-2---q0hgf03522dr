@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import ChannelsCard from "../ChannelsCard/ChannelsCard";
 import "./ChannelsList.css";
+import Navbar from "../../Navbar/Navbar";
 
 function ChannelsList() {
 
@@ -55,28 +56,31 @@ function ChannelsList() {
     }, []);
 
     return (
-        <div>
-            {isLoading ? (
-                <p>Loading...</p>
-            ) : (
-                <div>
-                    {channelsList.length === 0 ? (
-                        <p>No channels available.</p>
-                    ) : (
-                        <section className="channelslist-container">
-                            {channelsList.map((channel,_id) => (
-                            <ChannelsCard
-                                key={_id}
-                                {...channel}  
-                                deleteChannel={() => deleteChannel(channel._id)}                              
-                            />
-                            ))}
-                        </section>
+        <>
+            <Navbar />
+            <div>
+                {isLoading ? (
+                    <p>Loading...</p>
+                ) : (
+                    <div>
+                        {channelsList.length === 0 ? (
+                            <p>No channels available.</p>
+                        ) : (
+                            <section className="channelslist-container">
+                                {channelsList.map((channel, _id) => (
+                                    <ChannelsCard
+                                        key={_id}
+                                        {...channel}
+                                        deleteChannel={() => deleteChannel(channel._id)}
+                                    />
+                                ))}
+                            </section>
+                        )}
+                    </div>
+                )}
+            </div>
+        </>
 
-                    )}
-                </div>
-            )}
-        </div>
     );
 
 }

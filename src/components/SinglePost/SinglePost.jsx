@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import "./SinglePost.css";
+import Navbar from "../Navbar/Navbar";
 
 function SinglePost() {
     const authToken = localStorage.getItem("authToken");
@@ -108,6 +109,8 @@ function SinglePost() {
     const { author, createdAt, images = [""] } = post;
 
     return (
+        <>
+        <Navbar />
         <div className="single-post-container">
             <div className="single-post-container1">
                 {author ? (
@@ -155,6 +158,8 @@ function SinglePost() {
                 </div>
             </div>
         </div>
+        </>
+        
     );
 }
 

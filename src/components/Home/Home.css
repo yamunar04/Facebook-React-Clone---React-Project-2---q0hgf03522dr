@@ -164,6 +164,7 @@
 }
 .create-posts-section2-icon{
   display: flex;
+  cursor: pointer;
 }
 .create-posts-section2-icon1{
   width: 40px;

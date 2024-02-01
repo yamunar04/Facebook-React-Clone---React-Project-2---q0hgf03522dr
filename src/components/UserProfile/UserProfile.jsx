@@ -115,53 +115,6 @@ const UserProfile = () => {
                             <p>{userDetails?.data?.skills[2] || ''}</p>
                         </div>
                     </div>
-
-                    <div className="profile-sidebar">
-                        <div className="sidebar-people">
-                            <h3 id="sidebar-section">People you may know</h3>
-                            <div className="sidebar-people-row">
-                                <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="" />
-                                <div>
-                                    <h2 id="sidebar-section">John</h2>
-                                    <p id="sidebar-section">Manager at Swiggy</p>
-                                    <button href="#" onClick={toggleFollow1}>
-                                        {isFollowing ? "Following" : "Follow"}
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="sidebar-people-row">
-                                <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="" />
-                                <div>
-                                    <h2 id="sidebar-section">Luciana</h2>
-                                    <p id="sidebar-section">Studied from University of Tokyo</p>
-                                    <button href="#" onClick={toggleFollow2}>
-                                        {" "}
-                                        {isFollowing1 ? "Following" : "Follow"}
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="sidebar-people-row">
-                                <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="" />
-                                <div>
-                                    <h2 id="sidebar-section">Anders</h2>
-                                    <p id="sidebar-section">Customer Support Executive at CRED</p>
-                                    <button href="#" onClick={toggleFollow3}>
-                                        {isFollowing2 ? "Following" : "Follow"}
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="sidebar-people-row">
-                                <img src="https://randomuser.me/api/portraits/women/61.jpg" alt="" />
-                                <div>
-                                    <h2 id="sidebar-section">Sara</h2>
-                                    <p id="sidebar-section">SDE at Zomato</p>
-                                    <button href="#" onClick={toggleFollow4}>
-                                        {isFollowing3 ? "Following" : "Follow"}
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
             </div>

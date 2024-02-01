@@ -23,30 +23,39 @@ const PostsCard = (props) => {
         navigate(`/userprofile/${user_id}`);
       }
 
-    const handleLikeClick = async () => {
-        setUpdatedLikeCount(updatedLikeCount+1);
-        if (!isLiked) {
-            const response = await fetch(`https://academics.newtonschool.co/api/v1/facebook/like/${_id}`, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${authToken}`,
-                    'projectID': 'q0hgf03522dr'
-                }
-            });
+    // const handleLikeClick = async () => {
+    //     setUpdatedLikeCount(updatedLikeCount+1);
+    //     if (!isLiked) {
+    //         const response = await fetch(`https://academics.newtonschool.co/api/v1/facebook/like/${_id}`, {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Authorization': `Bearer ${authToken}`,
+    //                 'projectID': 'q0hgf03522dr'
+    //             }
+    //         });
     
-            if (response.ok) {
-                const likeResponse = await response.json();
+    //         if (response.ok) {
+    //             const likeResponse = await response.json();
     
-                if (likeResponse && likeResponse.status === 'success') {
-                    setIsLiked(true);
-                } else {
-                    console.error('Invalid like response structure:', likeResponse);
-                }
-            } else {
-                console.error('Failed to like post:', response);
-            }
-        }
-    };
+    //             if (likeResponse && likeResponse.status === 'success') {
+    //                 setIsLiked(true);
+    //             } else {
+    //                 console.error('Invalid like response structure:', likeResponse);
+    //             }
+    //         } else {
+    //             console.error('Failed to like post:', response);
+    //         }
+    //     }
+    // };
+
+    const like = () => {
+        setUpdatedLikeCount(updatedLikeCount + 1);
+        setIsLiked(!isLiked);
+      };
+      const dislike = () => {
+        setUpdatedLikeCount(updatedLikeCount - 1);
+        setIsLiked(!isLiked);
+      };
 
     return (
         <>
@@ -82,7 +91,7 @@ const PostsCard = (props) => {
                 </div>
                 <div className="like-comment-section-display">
                     <div className="like-comment">
-                        <div onClick={handleLikeClick}>
+                        <div onClick={isLiked ? dislike : like}>
                         <AiFillLike className="like" />
                         <span className="like-count">
                             {updatedLikeCount}

@@ -4,9 +4,9 @@
   
   .auth-modal {
     margin-top: 0.8rem;
-    width: 15rem;
+    width: 17rem;
     background-color: #fff;
-    height: auto;
+    height: 350px;
     position: absolute;
     right: 10px;
     border-radius: 10px;
@@ -26,7 +26,8 @@
     display: flex;
     align-items: center;
     margin-top: 16px;
-    /* font-size: 14px; */
+    margin-bottom: 0.5rem;
+    cursor: pointer;
   }
   .for-svg-for-name h6 {
     font-size: 20px;
@@ -46,6 +47,7 @@
   .upper-div-main {
     display: flex;
     flex-direction: column;
+    margin: 0.5rem;
   }
   .upper-div {
     margin-top: 1rem;
@@ -79,7 +81,7 @@
   }
   .sign-out-btn {
     /* margin-top: 0.5rem; */
-    font-size: 14px;
+    font-size: 18px;
     border: none;
     /* margin-left: -150px; */
     text-decoration: underline;
@@ -102,4 +104,28 @@
     color: blue;
     border-radius: 1px solid blue;
     margin-bottom: -10px;
+  }
+  .auth-modal-icon{
+    margin: 0.5rem;
+    border: 1px solid #EAEAEA;
+    border-radius: 0.2rem;
+    box-shadow: 2px #EAEAEA;
+  }
+  .quth-modal-span{
+    color: blue;
+    font-size: 20px;
+    margin-top: 0.7rem;
+    cursor: pointer;
+  }
+  .uppder-div-container{
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+  .upper-div-icon-container{
+    width: 25px;
+    height: 30px;
+  }
+  .uppder-div-container p{
+    font-size: 18px;
   }

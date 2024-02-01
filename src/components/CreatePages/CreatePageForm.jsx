@@ -27,28 +27,33 @@ const CreatePageForm = () => {
     <>
       <Navbar />
       <div className="createpage-form">
-        <h3 className="create-page-header">Create New Facebook Page</h3>
-        <form onSubmit={handleSubmit} >
-          <label htmlFor="title">Title:</label>
-          <input
-            type="text"
-            id="title"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+      <h3 className="create-page-header">Create New Facebook Page</h3>
+        <div className="createpage-form-container">       
+          <form onSubmit={handleSubmit} >
+            <label htmlFor="title">Title:</label>
+            <input
+              type="text"
+              id="title"
+              value={name}
+              placeholder="Add title"
+              onChange={(e) => setName(e.target.value)}
+            />
 
-          <label htmlFor="description">Description:</label>
-          <textarea
-            id="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          ></textarea>
+            <label htmlFor="description">Description:</label>
+            <textarea
+              id="description"
+              value={description}
+              placeholder="Add description"
+              onChange={(e) => setDescription(e.target.value)}
+            ></textarea>
 
-          <label htmlFor="image">Image:</label>
-          <input type="file" id="image" onChange={handleImageChange} />
-          <button type="submit" >Create Page</button>
-        </form>
+            <label htmlFor="image">Image:</label>
+            <input type="file" id="image" onChange={handleImageChange} />
+            <button type="submit" >Create Page</button>
+          </form>
+        </div>
       </div>
+
     </>
   );
 };

@@ -14,7 +14,7 @@ const CreatePostForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const channelId = "64e5ef9e467bbeae5d846e04";
-        const response = await createPostApi(authToken,title,content,images,channelId);
+        const response = await createPostApi(authToken, title, content, images, channelId);
         alert("Post Created Successfully");
         navigate("/");
     };
@@ -27,28 +27,32 @@ const CreatePostForm = () => {
     return (
         <>
             <Navbar />
-            <div className="createpost-form">
-                <form onSubmit={handleSubmit} >
-                    <label htmlFor="title">Title:</label>
-                    <input
-                        type="text"
-                        id="title"
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                    />
+            <div className="createpage-form">
+                <h3 className="create-page-header">Create New Post</h3>
+                <div className="createpage-form-container">
+                    <form onSubmit={handleSubmit} >
+                        <label htmlFor="title">Title:</label>
+                        <input
+                            type="text"
+                            id="title"
+                            value={title}
+                            onChange={(e) => setTitle(e.target.value)}
+                        />
 
-                    <label htmlFor="content">Content:</label>
-                    <textarea
-                        id="content"
-                        value={content}
-                        onChange={(e) => setContent(e.target.value)}
-                    ></textarea>
+                        <label htmlFor="content">Content:</label>
+                        <textarea
+                            id="content"
+                            value={content}
+                            onChange={(e) => setContent(e.target.value)}
+                        ></textarea>
 
-                    <label htmlFor="image">Image:</label>
-                    <input type="file" id="image" onChange={handleImageChange} />
+                        <label htmlFor="image">Image:</label>
+                        <input type="file" id="image" onChange={handleImageChange} />
 
-                    <button type="submit">Create Post</button>
-                </form>
+                        <button type="submit">Create Post</button>
+                    </form>
+                </div>
+
             </div>
         </>
 

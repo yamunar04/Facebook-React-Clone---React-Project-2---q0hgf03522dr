@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import PostsCard from '../Posts/PostsCard/PostsCard';
 import "./SearchBar.css";
+import Navbar from '../Navbar/Navbar';
 
 const SearchResult = () => {
   const { term } = useParams();
@@ -32,18 +33,22 @@ const SearchResult = () => {
   }, [term]);
 
   return (
-    <div>
-      <h2 className='search-results'>Search Results for "{term}"</h2>
-      {isLoading ? (
-        <div>Loading...</div>
-      ) : (
-        <div className="postList-container">
-          {searchResults.map((product, index) => (
-            <PostsCard key={index} {...product} />
-          ))}
-        </div>
-      )}
-    </div>
+    <>
+      <Navbar />
+      <div>
+        <h2 className='search-results'>Search Results for "{term}"</h2>
+        {isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          <div className="postList-container">
+            {searchResults.map((post, index) => (
+              <PostsCard key={index} {...post} />
+            ))}
+          </div>
+        )}
+      </div>
+    </>
+
   );
 };
 

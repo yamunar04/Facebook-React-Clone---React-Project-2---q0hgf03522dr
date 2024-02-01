@@ -1,9 +1,17 @@
+.create-group-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: blue;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .createpost-form{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
-    margin-top: 10px;
+    background-color: #EAEAEA;
     flex-direction: column;
 }
 .createpost-form label{
@@ -14,26 +22,28 @@
 }
 .createpost-form input{
     padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid black;
     font-size: large;
     width: 360px;
     height: 40px;
+    border: 1px solid white;
+    background-color: #EAEAEA;
+    border-radius: 1rem;
 }
 .createpost-form textarea{
     padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid black;
     font-size: large;
     width: 360px;
     height: 40px;
+    border: 1px solid #EAEAEA;
+    border-radius: 1rem;
+    background-color: #EAEAEA;
 }
 .createpost-form button{
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid black;
+    border-radius: 1rem;
+    border: 1px solid white;
     font-size: large;
     margin-top: 1rem;
     background-color: blue;
@@ -42,4 +52,17 @@
     width: 380px;
     height: 55px;
     cursor: pointer;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.createpost-form-container{
+    width: 500px;
+    border: 1px solid #EAEAEA;
+    border-radius: 0.2rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }

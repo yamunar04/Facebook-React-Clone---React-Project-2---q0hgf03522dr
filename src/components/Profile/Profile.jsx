@@ -3,6 +3,9 @@ import "./Profile.css";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { useNavigate } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { IoIosSettings, IoMdHelpCircle, IoIosMoon } from "react-icons/io";
+import { MdFeedback } from "react-icons/md";
+import { IoLogOut } from "react-icons/io5";
 
 const Profile = () => {
 
@@ -45,26 +48,43 @@ const Profile = () => {
       </section>
       {showModal && (
         <div className="auth-modal">
-          <div>
-            <div className="for-svg-for-name">
+          <div className="auth-modal-icon">
+            <div className="for-svg-for-name" onClick={() => navigate("/commingsoon")}>
               <AccountCircleIcon className="forSvg" />
             </div>
-
+            <hr></hr>
+            <span className="quth-modal-span" onClick={() => navigate("/commingsoon")}>See all profiles</span>
           </div>
 
           <div className="upper-div-main">
             <div className="upper-div">
-              <p onClick={() => alert("Comming Soon")}>
-                Setting & Privacy
-              </p>
-              <p onClick={() => alert("Comming Soon")}>
-                Help & Support
-              </p>
-              <p onClick={() => alert("Comming Soon")}>Display & Accessibility</p>
-              <p onClick={() => alert("Comming Soon")}>Give Feedback</p>
-              <button className="sign-out-btn" onClick={handleSignout}>
-                Sign Out
-              </button>
+              <div className="uppder-div-container">
+                <IoIosSettings className="upper-div-icon-container"/>
+                <p onClick={() => navigate("/commingsoon")}>
+                  Setting & Privacy
+                </p>
+              </div>
+              <div className="uppder-div-container">
+                <IoMdHelpCircle className="upper-div-icon-container"/>
+                <p onClick={() => navigate("/commingsoon")}>
+                  Help & Support
+                </p>
+              </div>
+              <div className="uppder-div-container">
+                <IoIosMoon className="upper-div-icon-container"/>
+                <p onClick={() => navigate("/commingsoon")}>Display & Accessibility</p>
+              </div>
+              <div className="uppder-div-container">
+                <MdFeedback className="upper-div-icon-container"/>
+                <p onClick={() => navigate("/commingsoon")}>Give Feedback</p>
+              </div>
+              <div className="uppder-div-container">
+                <IoLogOut className="upper-div-icon-container"/>
+                <button className="sign-out-btn" onClick={handleSignout}>
+                  Sign Out
+                </button>
+              </div>
+
             </div>
 
 

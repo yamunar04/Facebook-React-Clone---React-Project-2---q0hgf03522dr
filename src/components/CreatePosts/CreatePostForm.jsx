@@ -27,9 +27,9 @@ const CreatePostForm = () => {
     return (
         <>
             <Navbar />
-            <div className="createpage-form">
-                <h3 className="create-page-header">Create New Post</h3>
-                <div className="createpage-form-container">
+            <div className="createpost-form">
+                <h3 className="create-post-header">Create New Post</h3>
+                <div className="createpost-form-container">
                     <form onSubmit={handleSubmit} >
                         <label htmlFor="title">Title:</label>
                         <input

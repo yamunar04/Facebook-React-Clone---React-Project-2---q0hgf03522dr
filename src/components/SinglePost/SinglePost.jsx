@@ -116,7 +116,7 @@ function SinglePost() {
                 {author ? (
                     <>
                         <div className="single-post-name-createdat">
-                            <p>{author.name}</p>
+                            <p className="single-post-name-createdat-p">{author.name}</p>
                         </div>
                         <div className="single-post-image">
                             <img src={images} alt="image" />

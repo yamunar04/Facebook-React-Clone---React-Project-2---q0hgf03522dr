@@ -2,7 +2,8 @@
     display: flex;
     padding: 1rem;
     flex-direction: row;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+    background-color: #EAEAEA;
 }
 .single-post-container1{
     margin-right: 2rem;
@@ -28,7 +29,8 @@
     display: flex;
     width: 400px;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid white;
+    background-color: white;
     margin-top: 1.5rem;
     border-radius: 0.2rem;
     padding: 0.5rem;
@@ -42,18 +44,24 @@
 }
 .single-post-container2 li{
     margin: 0.5rem;
+    border-radius: 0.5rem;
 }
 .comments-container{
-    border: 1px solid black;
+    border: 1px solid #EAEAEA;
+    background-color: #EAEAEA;
     border-radius: 0.2rem;
 }
 .comments-container p{
     margin-left: 0.5rem;
+    background-color: #EAEAEA;
 }
 .comments-delete-button{
     margin: 0.5rem;
     padding: 0.2rem;
     cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem 
 }
 .comments-delete-button:hover{
     color: blue;
@@ -65,11 +73,17 @@
     width: 366px;
     height: 50px;
     padding: 0.5rem;
+    background-color: #EAEAEA;
+    border: #EAEAEA;
+    border-radius: 0.2rem;
 }
 .comments-add-button{
     margin: 0.5rem;
     padding: 0.2rem;
     cursor: pointer;
+    background: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 0.5rem
 }
 .comments-add-button:hover{
     color: blue;
@@ -84,7 +98,14 @@
     width: 200px;
     height: 30px;
     cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 0.5rem 
 }
 .delete-post:hover{
     color: blue;
+}
+.single-post-name-createdat-p{
+    background-color: #EAEAEA;
 }

@@ -6,7 +6,7 @@ import { FaCommentAlt } from "react-icons/fa";
 import { AiFillLike } from "react-icons/ai";
 
 const PostsCard = (props) => {
-    const { author , _id, createdAt, images, content, likeCount, commentCount,channel : {image} } = props;
+    const { author, _id, createdAt, images, content, likeCount, commentCount, channel: { image } } = props;
 
     const name = author.name;
     const user_id = author._id;
@@ -21,16 +21,16 @@ const PostsCard = (props) => {
     };
     const handleClickProfile = () => {
         navigate(`/userprofile/${user_id}`);
-      }
+    }
 
     const like = () => {
         setUpdatedLikeCount(updatedLikeCount + 1);
         setIsLiked(!isLiked);
-      };
-      const dislike = () => {
+    };
+    const dislike = () => {
         setUpdatedLikeCount(updatedLikeCount - 1);
         setIsLiked(!isLiked);
-      };
+    };
 
     return (
         <>
@@ -62,20 +62,23 @@ const PostsCard = (props) => {
                             className="posts-image-click"
                         />
                     </div>
-                    
+
                 </div>
                 <div className="like-comment-section-display">
                     <div className="like-comment">
                         <div onClick={isLiked ? dislike : like}>
-                        <AiFillLike className="like" />
-                        <span className="like-count">
-                            {updatedLikeCount}
-                        </span>
+                            <AiFillLike className="like" />
+                            <span className="like-count">
+                                {updatedLikeCount}
+                            </span>
                         </div>
-                        <FaCommentAlt className="comment" onClick={handleImageClick}/>
-                        <span className="comment-count" >
-                            {commentCount}                           
-                        </span>                                           
+                        <div className="comment1">
+                            <FaCommentAlt className="comment" onClick={handleImageClick} />
+                            <span className="comment-count" >
+                                {commentCount}
+                            </span>
+                        </div>
+
                     </div>
                 </div>
             </section>

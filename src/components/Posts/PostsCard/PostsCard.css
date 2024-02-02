@@ -144,3 +144,34 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
+
+@media only screen and (max-width: 500px) {
+  .posts-container {
+    width: 300px;
+    margin: auto;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem
+  }
+  .posts-description{
+    width: 300px;
+  }
+  .posts-image{
+    width: 300px;
+  }
+  .posts-image-click{
+    width: 300px;
+  }
+  .posts-image img{
+    width: 300px;
+  }
+  .like-comment-section-display{
+    width: 300px;
+  }
+  .comment {
+    width: 18px;
+    margin-left: 0;
+  }
+ .comment1{
+  margin-left: 180px;
+ }
+}

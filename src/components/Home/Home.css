@@ -214,3 +214,26 @@
     width: 450px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .posts-section{
+    width: 400px;
+    overflow-y: hidden;
+  }
+  .home-header-container{
+    width: 370px;
+    margin-left: 1rem
+  }
+  .create-posts-container{
+    width: 300px;
+  }
+  .create-posts{
+    width: 200px;
+  }
+  .create-input{
+    width: 200px;
+  }
+  .home-posts-list{
+    width: 400px;
+  }
+}

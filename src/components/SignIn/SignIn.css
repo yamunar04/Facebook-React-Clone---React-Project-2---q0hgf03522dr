@@ -4,12 +4,12 @@
     margin: 0 auto;
     background-color: #EAEAEA;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
 .signin-description{
     display: flex;
     flex-direction: column;
-    width: 600px;
+    /* width: 600px; */
     margin-top: 6rem;
     margin-left: 8rem; 
 }
@@ -30,7 +30,7 @@
     background-color: white;
     border: 1px solid white;
     border-radius: 0.5rem;
-    width: 350px;
+    /* width: 350px; */
     padding: 1rem;
 }
 
@@ -39,7 +39,7 @@
     border-radius: 0.25rem;
     border: 1px solid #EAEAEA;
     font-size: large;
-    width: 325px;
+    /* width: 325px; */
   }
   
   #email{
@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
-    width: 325px;
+    /* width: 325px; */
   }
 
 .signin p{
@@ -70,7 +70,7 @@
 #signin-button{
     font-size: x-large; 
     cursor: pointer;
-    width: 345px;
+    /* width: 345px; */
     background-color: blue;
     color: white;
 }
@@ -81,12 +81,13 @@
 
 hr{
     color: #EAEAEA;
-    width: 345px;
+    /* width: 345px; */
 }
 .signup-button{
     height: 40px;
     margin-top: 0.5rem;
-    width: 200px;
+    /* width: 200px; */
+    padding: 10px;
     border: none;
     background-color: #42b72a;
     color: white;
@@ -108,4 +109,19 @@ hr{
 }
 .signup-button:hover{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    .signin-page{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .signin form{
+        width: 100%;
+    }
+    .signin-description{
+        padding: 40px;
+        margin-top: 0;
+        margin-left: 0;
+    }
 }

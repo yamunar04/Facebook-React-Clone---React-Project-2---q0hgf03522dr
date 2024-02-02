@@ -169,9 +169,13 @@
   }
   .comment {
     width: 18px;
-    margin-left: 0;
+    margin-left: 0!important;
   }
  .comment1{
-  margin-left: 180px;
+  margin-left: 0;
+ }
+ .like-comment{
+  display: flex;
+  justify-content: space-between;
  }
 }

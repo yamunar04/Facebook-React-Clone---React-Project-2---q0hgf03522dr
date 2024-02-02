@@ -103,9 +103,7 @@
     border: none;
     border-radius: 0.5rem 
 }
-.delete-post:hover{
-    color: blue;
-}
+
 .single-post-name-createdat-p{
     background-color: #EAEAEA;
 }

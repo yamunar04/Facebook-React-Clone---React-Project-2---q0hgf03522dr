@@ -2,9 +2,8 @@ p{
     color: black;
     background-color: white;
 }
-/* .postslist-container */
+
 .postslist-container{
-    /* gap: 2rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,5 +15,4 @@ p{
     .postslist-container{
         width: 100%;
     }
-
   }

@@ -6,10 +6,12 @@ import { FaCommentAlt } from "react-icons/fa";
 import { AiFillLike } from "react-icons/ai";
 
 const PostsCard = (props) => {
-    const { author, _id, createdAt, images, content, likeCount, commentCount, channel: { image } } = props;
+    // const { author, _id, createdAt, images, content, likeCount, commentCount, channel: { image } } = props;
+    const { author, _id, createdAt, images, content, likeCount, commentCount } = props;
 
     const name = author.name;
     const user_id = author._id;
+    const profileImage = author.profileImage;
 
     const [isLiked, setIsLiked] = useState(false);
     const [updatedLikeCount, setUpdatedLikeCount] = useState(likeCount);
@@ -37,7 +39,13 @@ const PostsCard = (props) => {
             <Link to={`/posts/${_id}`} ></Link>
             <section className="posts-container">
                 <div className="posts-image-name">
-                    <img src={image}
+                    {/* <img src={profileImage}
+                        alt="img"
+                        className="posts-profile-image"
+                        onClick={handleClickProfile}
+                    /> */}
+                    <img
+                        src={profileImage ? profileImage : 'https://www.shutterstock.com/shutterstock/photos/1153673752/display_1500/stock-vector-profile-placeholder-image-gray-silhouette-no-photo-1153673752.jpg'}
                         alt="img"
                         className="posts-profile-image"
                         onClick={handleClickProfile}

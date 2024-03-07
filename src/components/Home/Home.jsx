@@ -77,14 +77,14 @@ function Home() {
                
 
                 <div className="posts-section">
-                <div className="home-header-container" onClick={() => navigate("/commingsoon")}>
+                {/* <div className="home-header-container" onClick={() => navigate("/commingsoon")}>
                     <div className="home-header-1" > 
                         <CiCirclePlus className="home-header1-icon"/>
                     </div>
                     <div className="home-header-2">
                         <span>Create Story</span>
                     </div>
-                </div>
+                </div> */}
                     <div className="create-posts-container">
                     <div className="create-posts">
                         <img src="https://www.shutterstock.com/shutterstock/photos/1153673752/display_1500/stock-vector-profile-placeholder-image-gray-silhouette-no-photo-1153673752.jpg"

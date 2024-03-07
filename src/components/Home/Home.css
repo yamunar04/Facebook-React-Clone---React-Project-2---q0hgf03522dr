@@ -155,7 +155,7 @@
   flex-direction: column;
   margin-top: 0.5rem;
   padding: 0.5rem;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   width: 500px;
 }
 .create-posts-section2{

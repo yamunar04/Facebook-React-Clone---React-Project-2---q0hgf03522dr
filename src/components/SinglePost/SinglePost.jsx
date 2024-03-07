@@ -113,21 +113,24 @@ function SinglePost() {
         <Navbar />
         <div className="single-post-container">
             <div className="single-post-container1">
-                {author ? (
-                    <>
-                        <div className="single-post-name-createdat">
-                            <p className="single-post-name-createdat-p">{author.name}</p>
-                        </div>
-                        <div className="single-post-image">
-                            <img src={images} alt="image" />
-                        </div>
-                        <div className="delete-post-container">
-                            <button className="delete-post" onClick={() => deletePost(_id)} >Delete Post</button>
-                        </div>
-                    </>
-                ) : (
-                    <p>Loading...</p>
-                )}
+                <div className="single-post-container11">
+                    {author ? (
+                        <>
+                            <div className="single-post-name-createdat">
+                                <p className="single-post-name-createdat-p">{author.name}</p>
+                            </div>
+                            <div className="single-post-image">
+                                <img src={images} alt="image" />
+                            </div>
+                            <div className="delete-post-container">
+                                <button className="delete-post" onClick={() => deletePost(_id)} >Delete Post</button>
+                            </div>
+                        </>
+                    ) : (
+                        <p>Loading...</p>
+                    )}
+                </div>
+                
             </div>
 
             <div className="single-post-container2">

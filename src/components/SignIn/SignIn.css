@@ -1,17 +1,21 @@
 .signin-page{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     background-color: #EAEAEA;
     height: 100%;
     /* width: 100%; */
+   
 }
 .signin-description{
     display: flex;
     flex-direction: column;
-    /* width: 600px; */
-    margin-top: 6rem;
-    margin-left: 8rem; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
 }
 .signin-heading{
     font-size: 60px;
@@ -25,10 +29,10 @@
 }
 .signin{
     display: flex;
-    margin: 3rem;
-    margin-top: 3rem;
-    background-color: white;
-    border: 1px solid white;
+    /* margin: 3rem;
+    margin-top: 3rem; */
+    /* background-color: white; */
+    /* border: 1px solid white; */
     border-radius: 0.5rem;
     /* width: 350px; */
     padding: 1rem;
@@ -39,7 +43,7 @@
     border-radius: 0.25rem;
     border: 1px solid #EAEAEA;
     font-size: large;
-    /* width: 325px; */
+    width: 360px;
   }
   
   #email{
@@ -48,9 +52,9 @@
   #password{
     height: 25px;
   }
-.signin label{
+/* .signin label{
     font-size: x-large; 
-  }
+  } */
 .signin form {
     margin-top: 2rem;
     display: flex;
@@ -68,9 +72,10 @@
   }
 
 #signin-button{
+    margin-top: 1rem;
     font-size: x-large; 
     cursor: pointer;
-    /* width: 345px; */
+    width: 378px;
     background-color: blue;
     color: white;
 }
@@ -86,12 +91,12 @@ hr{
 .signup-button{
     height: 40px;
     margin-top: 0.5rem;
-    /* width: 200px; */
+    width: 378px;
     padding: 10px;
     border: none;
     background-color: #42b72a;
     color: white;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     font-size: 15px;
     font-weight: 600;
 }
@@ -110,7 +115,15 @@ hr{
 .signup-button:hover{
     cursor: pointer;
 }
+.signin-email-label{
+    font-size: medium;
+    font-weight: 500;
+}
 
+.signin-password-label{
+    font-size: medium;
+    font-weight: 500;
+}
 @media only screen and (max-width: 500px){
     .signin-page{
         flex-direction: column;

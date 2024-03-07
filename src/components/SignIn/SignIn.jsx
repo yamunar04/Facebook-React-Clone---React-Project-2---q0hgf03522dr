@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./SignIn.css";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../Provider/UserProvider";
+import { FaFacebook } from "react-icons/fa";
 
 function SignIn() {
     const { setUserContext: signInContext, authTokenData, setAuthTokenData } = useUser();
@@ -63,11 +64,16 @@ function SignIn() {
     return (
         <div className="signin-page">
             <div className="signin-description">
-                <h3 className="signin-heading">facebook</h3>
-                <p className="signin-para">Facebook helps you connect and share with the people in your life.</p>
+                {/* <h3 className="signin-heading">facebook</h3>
+                <p className="signin-para">Facebook helps you connect and share with the people in your life.</p> */}
+                 <FaFacebook id="signin-logo" className="nav-logo" />
+                 <h2 className="sigin-header">Sign in to your account</h2>
             </div>
+           
             <div className="signin">
+            
                 <form onSubmit={handleSubmit}>
+                    <label for="email" className="signin-email-label">Email Address</label>
                     <input
                         type="text"
                         id="email"
@@ -77,6 +83,7 @@ function SignIn() {
                         value={userInfo.email}
                         onChange={handleChange}
                     />
+                    <label for="password" className="signin-password-label">Password</label>
                     <input
                         type="password"
                         id="password"
@@ -89,14 +96,14 @@ function SignIn() {
                     />
                     <input
                         type="submit"
-                        value='Log in'
+                        value='Sign in'
                         className="signin-input"
                         required
                         id="signin-button"
                     />
                     {/* Display error message */}
                     {error && <p className="error-message">{getErrorText(error)}</p>}
-                    <p className="signin-p" onClick={() => alert("Try with correct Password")}>Forgotten password?</p>
+                    {/* <p className="signin-p" onClick={() => alert("Try with correct Password")}>Forgotten password?</p> */}
                     <hr></hr>
                     <div className="signup-button-container">
                         <input

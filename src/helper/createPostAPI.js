@@ -16,7 +16,7 @@ export async function createPostApi(token, title,content, images, channelId) {
         body: fd,
       });
       const resData = await res.json();
-
+      console.log(resData);
       return resData;
     } catch (error) {
       console.error("error creating post", error.message);

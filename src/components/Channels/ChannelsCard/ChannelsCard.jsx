@@ -29,9 +29,9 @@ const ChannelsCard = (props) => {
                     </div>
 
                 </div>
-                <div className="delete-channel-section">
+                {/* <div className="delete-channel-section">
                     <button className="delete-channel" onClick={deleteChannel}>Delete Page</button>
-                </div>
+                </div> */}
             </div>
         </>
     );

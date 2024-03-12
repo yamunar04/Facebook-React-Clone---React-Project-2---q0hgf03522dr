@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./PostsCard.css";
@@ -22,16 +22,69 @@ const PostsCard = (props) => {
         navigate(`/posts/${_id}`);
     };
     const handleClickProfile = () => {
-        navigate(`/userprofile/${user_id}`);
+        // navigate(`/userprofile/${user_id}`);
+        navigate("/commingsoon");
     }
 
+    // const like = () => {
+    //     setUpdatedLikeCount(updatedLikeCount + 1);
+    //     setIsLiked(!isLiked);
+    // };
+    // const dislike = () => {
+    //     setUpdatedLikeCount(updatedLikeCount - 1);
+    //     setIsLiked(!isLiked);
+    // };
+    // useEffect(() => {
+    //     // Load like count from local storage if available
+    //     const storedLikeCount = localStorage.getItem(`likeCount_${_id}`);
+    //     if (storedLikeCount !== null) {
+    //         setUpdatedLikeCount(parseInt(storedLikeCount));
+    //     }
+    // }, [_id]);
+    useEffect(() => {
+        // Load like count from local storage if available
+        const storedLikeCount = localStorage.getItem(`likeCount_${_id}`);
+        if (storedLikeCount !== null) {
+            setUpdatedLikeCount(parseInt(storedLikeCount));
+        }
+
+        // Check if the user has already liked the post
+        const storedLikeStatus = localStorage.getItem(`isLiked_${_id}`);
+        if (storedLikeStatus === "true") {
+            setIsLiked(true);
+        }
+    }, [_id]);
+
+    // const like = () => {
+    //     const newLikeCount = isLiked ? updatedLikeCount - 1 : updatedLikeCount + 1;
+    //     setUpdatedLikeCount(newLikeCount);
+    //     setIsLiked(!isLiked);
+    //     localStorage.setItem(`likeCount_${_id}`, newLikeCount.toString());
+    // };
     const like = () => {
-        setUpdatedLikeCount(updatedLikeCount + 1);
-        setIsLiked(!isLiked);
+        if (!isLiked) {
+            const newLikeCount = updatedLikeCount + 1;
+            setUpdatedLikeCount(newLikeCount);
+            setIsLiked(true);
+            localStorage.setItem(`likeCount_${_id}`, newLikeCount.toString());
+            localStorage.setItem(`isLiked_${_id}`, "true");
+        }
     };
+
+    // const dislike = () => {
+    //     const newLikeCount = isLiked ? updatedLikeCount - 1 : updatedLikeCount + 1;
+    //     setUpdatedLikeCount(newLikeCount);
+    //     setIsLiked(!isLiked);
+    //     localStorage.setItem(`likeCount_${_id}`, newLikeCount.toString());
+    // };
     const dislike = () => {
-        setUpdatedLikeCount(updatedLikeCount - 1);
-        setIsLiked(!isLiked);
+        if (isLiked) {
+            const newLikeCount = updatedLikeCount - 1;
+            setUpdatedLikeCount(newLikeCount);
+            setIsLiked(false);
+            localStorage.setItem(`likeCount_${_id}`, newLikeCount.toString());
+            localStorage.setItem(`isLiked_${_id}`, "false");
+        }
     };
 
     return (

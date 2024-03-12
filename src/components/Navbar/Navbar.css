@@ -25,22 +25,23 @@
     height: 43px;
   }
   .header_search input {
-    width: 250px;
-    transition: width 0.2s;
-    background-color: transparent;
-    border-radius: 1px;
-    outline: 0;
-    height: 2rem;
-    padding: 1.2rem;
-    border: 0 solid #e5e7eb;
+    width: 150px;
+    margin-left: 0.5rem;
+    /* transition: width 0.2s; */
+    background-color: #EAEAEA;
+    /* border-radius: 1px;
+    outline: 0; */
+    height: 1.5rem;
+    /* padding: 1.2rem; */
+    border: none;
   }
   
-  .fa-search {
+  /* .fa-search {
     color: aqua;
-  }
-  .mercado-match {
+  } */
+  /* .mercado-match {
     color: blue;
-  }
+  } */
   
   .navbar-container1 {
     display: flex;
@@ -173,6 +174,7 @@
     width: 30px;
     height: 35px;
     color: grey;
+    margin-top:7px;
   }
   .nav-icon:hover{
     color: blue;
@@ -207,19 +209,55 @@
     color: blue;
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 550px) {
+    .navbar-container{
+      gap: 0.5rem;
+    }
+    .navbar-container1{
+      margin-left: 0.7rem;
+      gap: 0.5rem;
+    }
     .navbar-container2{
-      display: none;
+      display: flex;
+      gap: 0.5rem;
+      margin-left: 5px;
     }
     .navbar-container3{
-      margin-left: 70px;
+      margin-left: 5px;
+      gap: 0.5rem;
     }
-  }
-  @media only screen and (max-width: 500px) {
-    .navbar-container2{
+    .nav-icon-span{
+      display: none;   
+    }
+    .header_search{
+      width: 130px;
+    }
+    .header_search input{
+      width: 90px;
+    }
+    .navbar-container2-messaging span{
       display: none;
     }
-    .navbar-container3{
+    .nav-home{
+      display: none;
+    }
+    /* #navbar-notifications{
+      display: none;
+    } */
+    /* #navbar-friends{
+      display: none;
+    } */
+    #navbar-channels{
+      display: none;      
+    }
+    #nav-icon-notification{
+      width: 35px;
+    }
+    #span-me{
+      display: none;
+    }
+    .arrowIconForDropDown{
       display: none;
     }
   }
+  

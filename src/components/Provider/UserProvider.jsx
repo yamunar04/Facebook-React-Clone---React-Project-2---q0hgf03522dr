@@ -5,15 +5,17 @@ const UserContext = createContext();
 function UserProvider({children}){
     const [authTokenData, setAuthTokenData] = useState(null);
     const [user, setUser] = useState(null);
-
+    const token = localStorage.getItem("authToken");
+    
     const setUserContext = (userData) => {
         setUser(userData);
     }
-    let isUserLoggedIn = user;
+    // let isUserLoggedIn = user;
+    // let isUserLoggedIn = token;
     const value = {
         user,
         setUserContext,
-        isUserLoggedIn,
+        isUserLoggedIn : token,
         authTokenData,
         setAuthTokenData,
     };

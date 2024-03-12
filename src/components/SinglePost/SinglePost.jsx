@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import "./SinglePost.css";
 import Navbar from "../Navbar/Navbar";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function SinglePost() {
     const authToken = localStorage.getItem("authToken");
@@ -92,7 +94,10 @@ function SinglePost() {
             if (response.ok) {
                 // Refresh comments after deleting a comment
                 getPost();
-                alert("Post deleted Successfully");
+                setTimeout(() => {
+                    toast("Post deleted Successfully");
+                  });
+                // alert("Post deleted Successfully");
                 navigate("/");
             } else {
                 console.error("Error deleting comment:", response.statusText);
@@ -112,6 +117,7 @@ function SinglePost() {
         <>
         <Navbar />
         <div className="single-post-container">
+            <ToastContainer />
             <div className="single-post-container1">
                 <div className="single-post-container11">
                     {author ? (
@@ -120,8 +126,9 @@ function SinglePost() {
                                 <p className="single-post-name-createdat-p">{author.name}</p>
                             </div>
                             <div className="single-post-image">
-                                <img src={images} alt="image" />
+                                <img src={images} alt="image"  />
                             </div>
+                            
                             <div className="delete-post-container">
                                 <button className="delete-post" onClick={() => deletePost(_id)} >Delete Post</button>
                             </div>

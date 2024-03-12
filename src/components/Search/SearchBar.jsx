@@ -35,12 +35,13 @@ const SearchBar = () => {
 
     return (
         <>
-            <FaSearch onClick={focusSearchBar} className='search-bar-icon' />
+            {/* <FaSearch onClick={focusSearchBar} className='search-bar-icon' /> */}
+            <FaSearch  className='search-bar-icon' />
             <input
                 type="text"
                 id="search"
-                ref={searchbarRef}
-                placeholder="Search Facebook...."
+                // ref={searchbarRef}
+                placeholder="Search...."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSearch()}

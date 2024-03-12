@@ -89,16 +89,20 @@ hr{
     /* width: 345px; */
 }
 .signup-button{
-    height: 40px;
+    height: 25px;
     margin-top: 0.5rem;
-    width: 378px;
+    width: 360px;
     padding: 10px;
     border: none;
     background-color: #42b72a;
     color: white;
     border-radius: 0.2rem;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 .signup-button-container{
     display: flex;

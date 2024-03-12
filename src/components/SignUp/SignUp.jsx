@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./SignUp.css";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../Provider/UserProvider";
 import DatePicker from "./DatePicker/DatePicker";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function SignUp() {
     const { setUserContext: signUpContext, authTokenData, setAuthTokenData } = useUser();
@@ -24,6 +25,13 @@ function SignUp() {
         const { name, value } = event.target;
         setUserInfo({ ...userInfo, [name]: value });
     }
+    const { isUserLoggedIn } = useUser();
+
+    // useEffect(() => {
+    //     if (isUserLoggedIn) {
+    //         navigate("/");
+    //     }
+    // });
 
     async function signUp(userInfo) {
         try {
@@ -59,7 +67,9 @@ function SignUp() {
                 localStorage.setItem('authToken', token);
                 localStorage.setItem('userInfo', JSON.stringify({ name }));
                 setAuthTokenData(token);
-
+                setTimeout(() => {
+                    toast("Signed Up Successfully");
+                  });
                 signUpContext(token);
                 navigate('/');
             } else {
@@ -74,12 +84,15 @@ function SignUp() {
     function handleSubmit(event) {
         event.preventDefault();
         signUp(userInfo);
-        alert("Signed Up Successfully");
+        // setTimeout(() => {
+        //     toast("Signed Up Successfully");
+        //   });
+        // alert("Signed Up Successfully");
     }
 
     return (
         <div className="signup-page">
-
+             <ToastContainer /> 
             <div className="signup">
                 <div className="signup-header-section">
                     <div>Sign Up</div>

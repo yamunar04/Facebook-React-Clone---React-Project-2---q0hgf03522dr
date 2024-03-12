@@ -216,6 +216,7 @@
     .navbar-container1{
       margin-left: 0.7rem;
       gap: 0.5rem;
+      margin-top: 0.6rem;
     }
     .navbar-container2{
       display: flex;
@@ -231,6 +232,7 @@
     }
     .header_search{
       width: 130px;
+      height: 35px;
     }
     .header_search input{
       width: 90px;
@@ -258,6 +260,9 @@
     }
     .arrowIconForDropDown{
       display: none;
+    }
+    .nav-logo{
+      width: 34px;
     }
   }
   
